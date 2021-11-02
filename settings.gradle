@@ -10,3 +10,5 @@ include ':reactive-web'
 project(':reactive-web').projectDir = file('./infrastructure/entry-points/reactive-web')
 include ':mongo-repository'
 project(':mongo-repository').projectDir = file('./infrastructure/driven-adapters/mongo-repository')
+include ':cron-calculate'
+project(':cron-calculate').projectDir = file('./infrastructure/helpers/cron-calculate')

@@ -14,7 +14,8 @@ public class RouterRest {
     @Bean
     public RouterFunction<ServerResponse> routerFunction(Handler handler) {
         return route(GET("/api/cronjob/list"), handler::listAll)
-                .andRoute(GET("/api/cronjob/by-id"), handler::listById);
+                .andRoute(GET("/api/cronjob/by-id"), handler::listById)
+                .andRoute(GET("/api/cronjob/list-next"), handler::listNextExecution);
 
     }
 }
