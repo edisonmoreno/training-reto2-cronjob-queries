@@ -1,1 +1,1 @@
-web: java -Dserver.port=8080 -jar app/app-service.jar
+web: java -Dserver.port=$PORT -jar app/app-service.jar
