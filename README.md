@@ -8,6 +8,11 @@ Recibe una petición, publica un mensaje en la cola, escucha, procesa el evento,
 
 Utiliza scaffold-clean-architecture de Bancolombia (información a continuación)
 
+# Docker
+```
+docker build -f deployment/Dockerfile -t ms-queries:latest .
+docker run -p 8080:8080 ms-queries:latest
+```
 
 ---
 # Proyecto Base Implementando Clean Architecture
