@@ -1,6 +1,5 @@
 package com.edisonmoreno.model;
 
-import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,8 +15,9 @@ public class CronJobMaterialize {
     private String timeout;
     private String retry;
     private String email;
+    private Integer totalSuccessful;
+    private Integer totalFailed;
     private Set<Execution> executions;
-
 
     private CronJobMaterialize() {
     }
